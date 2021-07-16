@@ -1,10 +1,7 @@
 package web.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import web.model.Car;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -27,6 +24,4 @@ public class CarServiceIml implements CarService {
         Integer count = id == null ? 5 : id;
         return carList.stream().filter(carlist -> carlist.getId() <= count).collect(Collectors.toList());
     }
-
-
 }
