@@ -23,7 +23,6 @@
     </style>
 </head>
 <div>
-    <body>
     <table border="1">
         <h1>Cars</h1>
         <tr>
@@ -33,7 +32,6 @@
         <tr th:each="car : ${cars}">
             <td th:text="${car.getId()}">id</td>
             <td th:text="${car.getModel()}">model</td>
-
 </div>
 </body>
 </html>

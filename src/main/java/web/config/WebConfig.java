@@ -44,16 +44,7 @@ public class WebConfig implements WebMvcConfigurer {
         return templateEngine;
     }
 
-    @Bean
-    public List<Car> listOfCars() {
-        List<Car> car = new ArrayList<>();
-        car.add(new Car("Audi",111));
-        car.add(new Car("BMV",222));
-        car.add(new Car("Lada",333));
-        car.add(new Car("KIO",444));
-        car.add(new Car("Toyota",555));
-        return car;
-    }
+
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         ThymeleafViewResolver resolver = new ThymeleafViewResolver();
